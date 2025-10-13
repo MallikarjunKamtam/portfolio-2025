@@ -62,7 +62,7 @@ const RockPaperScissors = () => {
     }
     const timerInterval = setInterval(() => setTimer((t) => t - 1), 1000);
     return () => clearInterval(timerInterval);
-  }, [timer]);
+  }, [timer, spraying]);
 
   // Spawn objects while timer > 0
   useEffect(() => {
@@ -185,7 +185,9 @@ const RockPaperScissors = () => {
             color="secondary"
             disabled={!isGameOn}
             size="small"
-            onChange={(e) => setTimer(+e.target.value)}
+            onChange={(e) => {
+              setTimer(+e.target.value);
+            }}
             type="number"
             defaultValue={DEFAULT_TIMER}
             id="timer-input"
