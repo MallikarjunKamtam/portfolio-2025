@@ -1,25 +1,15 @@
 import "./App.css";
 import MouseTrail from "./components/MouseTrail";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import RockPaperScissors from "./pages/games/rock-paper-scissors";
+import Contact from "./pages/contact";
 import Homepage from "./pages/homepage";
-import Menu from "./components/menu";
-import Games from "./pages/games";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
+      <Homepage key={`app-home-page`} />
+      <Contact key={`app-contact`} />
       <MouseTrail />
-      <Menu />
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/games" element={<Games />} />
-        <Route
-          path="/games/rock-paper-scissors"
-          element={<RockPaperScissors />}
-        />
-      </Routes>
-    </BrowserRouter>
+    </>
   );
 }
 

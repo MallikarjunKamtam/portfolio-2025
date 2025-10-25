@@ -4,7 +4,7 @@ import { GiBoomerangSun } from "react-icons/gi";
 
 const menuItems = [
   { name: "Home", path: "/" },
-  { name: "Games", path: "/games" },
+  // { name: "Games", path: "/games" },
   { name: "About Me", path: "/about-me" },
   { name: "Contact", path: "/contact" },
 ];
