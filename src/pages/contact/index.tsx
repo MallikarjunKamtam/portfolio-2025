@@ -33,14 +33,13 @@ const Contact = () => {
 
     try {
       await axios.post(url, values);
+      formikHelper.resetForm();
       setIsSubmitSuccessful(true);
     } catch (error) {
       setIsSubmitSuccessful(false);
     } finally {
       setOpen(true);
     }
-
-    formikHelper.resetForm();
   }
 
   return (
