@@ -9,7 +9,7 @@ function Footer() {
   return (
     <div
       id="Footer"
-      className="bg-[#ccc] text-black p-10 flex gap-5 flex-col items-center justify-center"
+      className="bg-[#bbb] text-black p-10 flex gap-5 flex-col items-center justify-center"
     >
       <div className="flex gap-8">
         <a
