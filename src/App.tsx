@@ -1,5 +1,6 @@
 import "./App.css";
 import MouseTrail from "./components/MouseTrail";
+import ScrollProgressBar from "./components/ProgressBar";
 import Contact from "./pages/contact";
 import Experience from "./pages/experience";
 import Footer from "./pages/footer";
@@ -10,6 +11,7 @@ import WhatIDo from "./pages/whatIDo";
 function App() {
   return (
     <>
+      <ScrollProgressBar />
       <Homepage key={`app-home-page`} />
       <WhatIDo key={`what-i-do-app`} />
       <SKills key={`app-skills`} />
